@@ -6,9 +6,9 @@ public static class VoxelData
     public static readonly int ChunkHeight = 128;
     public static readonly int WordSizeInChunks = 15;
     public static readonly int ViewDistanceInChunks = 5;
-    
+     
     //Сколько в атласе блоков в одной строке
-    public static readonly int TextureAtlasSizeInBlocks = 4;
+    public static readonly int TextureAtlasSizeInBlocks = 16;
     public static float NormalizedBlockTextureSize => 1f / (float) TextureAtlasSizeInBlocks;
     public static int WorldSizeInVoxels => WordSizeInChunks * ChunkWidth;
     

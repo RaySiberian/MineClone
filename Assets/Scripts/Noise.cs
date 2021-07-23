@@ -4,6 +4,7 @@ public class Noise
 {
     public static float Get2DPerlin(Vector2 pos, float offset, float scale)
     {
+        // Значение offset задает "случайность" генерации шума
         return Mathf.PerlinNoise((pos.x + 0.1f) / VoxelData.ChunkWidth * scale + offset,
             (pos.y + 0.1f) / VoxelData.ChunkWidth * scale + offset);
     }
